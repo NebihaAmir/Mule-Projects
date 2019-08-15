@@ -1,0 +1,26 @@
+<div class="container"> 
+    <div class="row text-center">
+        <h2>All Users</h2>
+        <table class="table table-bordered">
+            <thead >
+                <tr  class="info text-center">
+                    <th class="text-center">ID</th>
+                    <th class="text-center">name</th>
+                    <th class="text-center">addres</th>
+                    <th class="text-center">email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-center"  ng-repeat="user in allusers">
+                    <td class="text-center">{{user.id}}</td>
+                    <td class="text-center">{{user.name}}</td>
+                    <td class="text-center">{{user.addres}}</td>
+                    <td class="text-center">{{user.email}}</td>
+                </tr>
+            </tbody>
+        </table>
+      <!--   <a href="#!/home"><button type="button" class="btn btn-danger" style="width:100px;">Home</button></a>   -->
+    </div>
+</div>
+    
+    
