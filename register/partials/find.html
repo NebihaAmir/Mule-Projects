@@ -1,0 +1,38 @@
+<div class="container">    
+    <div class="row text-center">
+        <div class="col-md-offset-4 col-md-4">
+            <div class=" form-group" style="padding-top:30px">
+                <label class=" col-sm-4 control-label text-right" style="padding-top:6px;">User ID:</label>
+                <div class="col-sm-6">
+                    <input class="form-control" ng-model="user_id" type="text" placeholder="user id" value="">
+                </div>         
+            </div>
+            <div class="row" style="padding-top:30px">       
+                <button type="button" class="btn btn-primary" ng-click="serachuser()" style="width:100px;">Find</button>
+                <a href="#!/home"><button type="button" class="btn btn-danger" style="width:100px;">Home</button></a>     
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h2>Find result</h2>
+        <table class="table table-bordered">
+            <thead >
+                <tr  class="info text-center">
+                    <th class="text-center">ID</th>
+                    <th class="text-center">first</th>
+                    <th class="text-center">last</th>
+                    <th class="text-center">department</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-center" >
+                    <td class="text-center">{{searchuser.id}}</td>
+                    <td class="text-center">{{searchuser.first}}</td>
+                    <td class="text-center">{{searchuser.last}}</td>
+                    <td class="text-center">{{searchuser.department}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+

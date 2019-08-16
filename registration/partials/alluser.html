@@ -1,0 +1,51 @@
+<div class="container"> 
+    <div class="row text-center" style="margin-bottom:20px; ">  
+        <div class="col-md-12">
+            <img class="img-responsive" src="assets/img/image.png" >
+        </div>
+    </div> 
+    <div class="row text-center">
+        <h2>All User</h2>
+       <button type="button" class="btn btn-defalut" style=" float:right;margin-bottom:5px;margin-left:20px;" title="Log out" ng-click="logout()" ><span class="glyphicon glyphicon-log-out"></span></button>
+        <button type="button" class="btn btn-danger" style="width:100px; float:right;margin-bottom:5px;" ng-click="export_csv('#tableToExport')" >Export CSV</button>
+         <table class="table table-bordered" id="tableToExport">
+            <thead >
+                <tr  class="info text-center">
+                    <th class="text-center">first</th>
+                    <th class="text-center">middle</th>
+                    <th class="text-center">last</th>
+                    <th class="text-center">email</th>
+                    <th class="text-center">phone</th>
+                    <th class="text-center">location</th>
+                    <th class="text-center">reference</th>
+                    <th class="text-center">college</th>
+                    <th class="text-center">year</th>
+                    <th class="text-center">budget</th>
+                    <th class="text-center">relocation</th>
+                    <th class="text-center">future</th>
+                    <th class="text-center">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-center" id="tr_{{i}}" ng-repeat="(i,user) in allusers">          
+                    <td class="text-center">{{user.first}}</td>
+                    <td class="text-center">{{user.middle}}</td>
+                    <td class="text-center">{{user.last}}</td>
+                    <td class="text-center">{{user.email}}</td>
+                    <td class="text-center">{{user.phone}}</td>
+                    <td class="text-center">{{user.location}}</td>
+                    <td class="text-center">{{user.reference}}</td>
+                    <td class="text-center">{{user.college}}</td>
+                    <td class="text-center">{{user.year}}</td>
+                    <td class="text-center">{{user.budget}}</td>
+                    <td class="text-center">{{user.relocation}}</td>
+                    <td class="text-center">{{user.future}}</td>
+                    <td class="text-center"  ng-click="deleteuser(user.userId,i)"><span class="fa fa-trash" style="font-size: 24px; color: #f50a33;"></span></td>
+                </tr>
+            </tbody>
+        </table>
+       
+    </div>
+</div>
+    
+     

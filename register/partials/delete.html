@@ -1,0 +1,28 @@
+<div class="container"> 
+    <div class="row text-center">
+        <h2>Delete User</h2>
+        <table class="table table-bordered">
+            <thead >
+                <tr  class="info text-center">
+                    <th class="text-center">ID</th>
+                    <th class="text-center">first</th>
+                    <th class="text-center">last</th>
+                    <th class="text-center">department</th>
+                    <th class="text-center">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-center" id="tr_{{i}}" ng-repeat="(i,user) in allusers">
+                    <td class="text-center">{{user.id}}</td>
+                    <td class="text-center">{{user.first}}</td>
+                    <td class="text-center">{{user.last}}</td>
+                    <td class="text-center">{{user.department}}</td>
+                    <td class="text-center"  ng-click="deleteuser(user.id,i)"><span class="fa fa-trash" style="font-size: 24px; color: #f50a33;"></span></td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="#!/home"><button type="button" class="btn btn-danger" style="width:100px;">Home</button></a>    
+    </div>
+</div>
+    
+    

@@ -1,0 +1,31 @@
+.modal-dialog {
+    top: 100px;
+}
+.btn-group-vertical button{
+    margin-top: 20px;
+    margin-bottom:20px;
+    width: 150px !important;
+    border-radius: 4px !important;
+}
+.btn-group, .btn-group-vertical {
+    position: relative;
+    display: grid !important;
+}
+.alert-success {    
+    display: none;
+}
+.alert-info {    
+    display: none;
+}
+.container h2{
+    color:#2327ea;
+}
+th{
+color: #092eef;
+}
+td span::focus{
+    color:#092eef;
+}
+td span::hover{
+    color:#092eef;
+}
