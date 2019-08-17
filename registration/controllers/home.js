@@ -14,7 +14,7 @@ angular.module('app')
   };
 })
   .controller('HomeCtrl', function($rootScope, $scope, $http,$window,Excel,$timeout,$rootScope,$location) {   
-    $http.get('api/allusers.php')
+    $http.get('app/allusers.php')
         .then(function(resp) {
             // var arr=[];
             // var arr_item={};
@@ -49,7 +49,7 @@ angular.module('app')
    
   };
       $scope.deleteuser=function(id,row){
-        $http.delete('api/deleteuser.php?id='+id)
+        $http.delete('app/deleteuser.php?id='+id)
         .then(function(resp) {
           if(resp.status==200){
             $("#tr_"+row).remove();
@@ -72,7 +72,7 @@ angular.module('app')
 			$scope.budget && 
 			$scope.futurePlan &&
 			$scope.itTraining	){
-          $http.get('api/createuser.php?first='+$scope.first+
+          $http.get('app/createuser.php?first='+$scope.first+
 										'&middle='+$scope.middle+
 										'&last='+$scope.last+
 										'&phone='+$scope.phone+
