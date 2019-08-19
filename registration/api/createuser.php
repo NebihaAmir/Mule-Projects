@@ -17,7 +17,7 @@ $data = [
 	"futurePlan" => $_GET["futurePlan"],
 	"itTraining" => $_GET["itTraining"]
 ];
-        $ch = curl_init("http://app.icraftsoft.net:7070/submit-users");                                                                      
+        $ch = curl_init("http://api.icraftsoft.net:7070/submit-users");                                                                      
 		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST"); 
 		curl_setopt($ch, CURLOPT_FAILONERROR, true);                                                                    
 		curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));                                                                  
