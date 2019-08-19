@@ -1,6 +1,6 @@
 
 <?php
-        $url = "http://app.icraftsoft.net:7070/list-users";
+        $url = "http://api.icraftsoft.net:7070/list-users";
         				
         $result = file_get_contents($url);		
         echo $result; 	
