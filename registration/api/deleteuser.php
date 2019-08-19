@@ -1,5 +1,5 @@
 <?php
-$url="http://app.icraftsoft.net:7070/delete-users/".$_GET["id"];
+$url="http://api.icraftsoft.net:7070/delete-users/".$_GET["id"];
 $ch = curl_init($url);                                                                      
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "DELETE"); 
 curl_setopt($ch, CURLOPT_FAILONERROR, true);                                                                    
