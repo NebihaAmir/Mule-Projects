@@ -1,0 +1,22 @@
+.modal-dialog {
+    top: 100px;
+}
+.btn-group-vertical button{
+    margin-top: 20px;
+    margin-bottom:20px;
+    width: 150px !important;
+    border-radius: 4px !important;
+}
+.btn-group, .btn-group-vertical {
+    position: relative;
+    display: grid !important;
+}
+
+.form-horizontal .control-label {
+    text-align: left;
+}
+.form-line-error .form-error-message {
+    background-color: #FF3200;
+    clear: both;
+    float: none;
+}
